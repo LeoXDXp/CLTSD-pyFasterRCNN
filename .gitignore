@@ -1,0 +1,17 @@
+*.pyc
+.ipynb_checkpoints
+lib/build
+lib/pycocotools/_mask.c
+lib/pycocotools/_mask.so
+*.o
+*.so
+data/cache/*
+data/faster_rcnn_model*
+data/VOCdevkit*
+data/fast_rcnn_models*
+data/selective_search*
+data/imagenet_models*
+experiments/logs/*
+data/tsd_full/Images/*
+data/tsd_test*
+output/faster_rcnn_end2end/*
