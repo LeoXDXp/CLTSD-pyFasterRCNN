@@ -1,13 +1,13 @@
 ### Centos 7 Atlas Makefile Patch
 
 * Replace LIBRARIES += cblas atlas in Makefile:368 with LIBRARIES += tatlas satlas
-* Remember to check WITH_PYTHON_LAYER := 1 and check that system paths for python are used (and not anaconda or other)
+* Remember to check in Makefile.config WITH_PYTHON_LAYER := 1 and check that system paths for python are used (and not anaconda or other)
 
 Must build caffe: http://caffe.berkeleyvision.org/installation.html#compilation
- - Must build caffe within *py-faster-rcnn project:  https://github.com/BVLC/caffe/issues/4619
-make all -j16
-make test -j16 # optional
-make runtest -16 # optional
+* Must build caffe within *py-faster-rcnn project:  https://github.com/BVLC/caffe/issues/4619
+ * make all -j16
+ * make test -j16 # optional
+ * make runtest -16 # optional
 
 Add "make pycaffe " after that
 Enter $FRCN_ROOT/lib and do 'make' : https://github.com/rbgirshick/fast-rcnn/issues/77
@@ -21,10 +21,9 @@ Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-d
 > import matplotlib as mpl
 > mpl.use("Agg")
 
-* Not Necessary, si se usa directamente faster-rcnn desde https://github.com/rbgirshick/py-faster-rcnn/
-
-* Actualizar rutas de descarga de scripts, segun URLs en https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/
-* Ejecutar el script fetch_faster y fetch_imagenet_models.sh en /data/scripts/: sh data/scripts/fetch_faster_rcnn_models.sh...
+* Actualizar rutas de descarga de scripts, segun URLs en https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/ (Solo si no se clona caffe desde el repo original)
+* Ejecutar el script fetch_faster y fetch_imagenet_models.sh en /data/scripts/: 
+> sh data/scripts/fetch_faster_rcnn_models.sh
 
 ### Modificaciones por uso de TeslaM2090 (compute capability 2)
 
