@@ -16,8 +16,7 @@ Enter $FRCN_ROOT/lib and do 'make' : https://github.com/rbgirshick/fast-rcnn/iss
 
 Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-devel leveldb-devel snappy snappy-devel Cython easydict(pip)
 
-### Add as 1st import in train_net.py and test_net.py if no X server is used. (No graphical interface on the server)
-### Añadir como el primer import en train_net.py
+* Add as 1st import in train_net.py and test_net.py if no X server is used. (If there is no graphical interface on the server) / Añadir como el primer import en train_net.py
 > import matplotlib as mpl
 > mpl.use("Agg")
 
