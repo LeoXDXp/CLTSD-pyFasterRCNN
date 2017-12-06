@@ -1,0 +1,13 @@
+diff --git a/caffe-fast-rcnn/Makefile b/caffe-fast-rcnn/Makefile
+index 598d28d..276ac05 100644
+--- a/caffe-fast-rcnn/Makefile
++++ b/caffe-fast-rcnn/Makefile
+@@ -366,7 +366,7 @@ else
+ 	ifeq ($(LINUX), 1)
+ 		ifeq ($(BLAS), atlas)
+ 			# Linux simply has cblas and atlas
+-			LIBRARIES += cblas atlas
++			LIBRARIES += tatlas satlas
+ 		endif
+ 	else ifeq ($(OSX), 1)
+ 		# OS X packages atlas as the vecLib framework

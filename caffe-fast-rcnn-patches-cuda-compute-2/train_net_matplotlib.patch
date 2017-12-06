@@ -1,0 +1,13 @@
+diff --git a/tools/train_net.py b/tools/train_net.py
+index 622a95d..776a6a0 100755
+--- a/tools/train_net.py
++++ b/tools/train_net.py
+@@ -9,6 +9,8 @@
+ 
+ """Train a Fast R-CNN network on a region of interest database."""
+ 
++import matplotlib as mpl
++mpl.use("Agg")
+ import _init_paths
+ from fast_rcnn.train import get_training_roidb, train_net
+ from fast_rcnn.config import cfg, cfg_from_file, cfg_from_list, get_output_dir
