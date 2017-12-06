@@ -21,7 +21,7 @@ Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-d
 > import matplotlib as mpl
 > mpl.use("Agg")
 
-### Not Necessary, si se usa directamente faster-rcnn desde https://github.com/rbgirshick/py-faster-rcnn/
+* Not Necessary, si se usa directamente faster-rcnn desde https://github.com/rbgirshick/py-faster-rcnn/
 
 * Actualizar rutas de descarga de scripts, segun URLs en https://github.com/rbgirshick/py-faster-rcnn/blob/master/data/scripts/
 * Ejecutar el script fetch_faster y fetch_imagenet_models.sh en /data/scripts/: sh data/scripts/fetch_faster_rcnn_models.sh...
@@ -65,7 +65,7 @@ Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-d
 
 ### Mejorar el dataset 
 * Opcion 1: Tomar data desde http://btsd.ethz.ch/shareddata/BelgiumTS/Annotations/camera0*.tar  y desglosar/transformar lo que sirva
-* Opcion 2:Dado los problemas para que detecte señales cuando la imagens es mayor que ~ 255x255, se multiplicaran por 10 las imagenes grandes
+* Opcion 2: Dado los problemas para que detecte señales cuando la imagens es mayor que ~ 255x255, se multiplicaran por 10 las imagenes grandes
 del GTSRD
 
 * Script de creacion de imagenes en cache de faster rcnn no soporta que nombre de imagenes tengan un . aparte del que ya tienen para la extension. Ej: image.1234.ppm will raise error
