@@ -10,6 +10,9 @@
  > /usr/bin/ld: .build_release/examples/cpp_classification/classification.o: referencia sin definir al símbolo '_ZN2cv6imreadERKNS_6StringEi'
 /usr/local/lib//libopencv_imgcodecs.so.3.3: error adding symbols: DSO missing from command line
 
+* Fall back to opencv2: (Still not working)
+  * Add opencv_imgcodecs in Makefile LIBRARIES +=: https://github.com/BVLC/caffe/issues/2288
+  * In Makefile.config removed /usr/local/ in python
  
 Must build caffe: http://caffe.berkeleyvision.org/installation.html#compilation
 * Only cudNN v5 soported (Archive version for cuda 8) : https://github.com/BVLC/caffe/pull/4159
