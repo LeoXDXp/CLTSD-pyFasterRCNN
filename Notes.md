@@ -14,7 +14,7 @@ Enter $FRCN_ROOT/lib and do 'make' : https://github.com/rbgirshick/fast-rcnn/iss
 
 ### Centos 7 Dependencies. Only easydict is not in repos
 
-Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-devel leveldb-devel snappy snappy-devel Cython easydict(pip)
+Packages: wget scikit* protobuf-devel protobuf protobuf-python lmdb-devel hdf5-devel leveldb-devel snappy snappy-devel Cython  glog glog-devel gflags-devel boost boost-devel easydict(pip)
 
 * Add as 1st import in train_net.py and test_net.py if no X server is used. (If there is no graphical interface on the server) / Añadir como el primer import en train_net.py
 > import matplotlib as mpl
