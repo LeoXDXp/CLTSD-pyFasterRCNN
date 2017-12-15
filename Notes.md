@@ -1,6 +1,7 @@
 ### Centos 7 Atlas Makefile Patch
 
 * Replace LIBRARIES += cblas atlas in Makefile:368 with LIBRARIES += tatlas satlas (using satlas tatlas caused error in fedora)
+* BLAS_LIB=/usr/lib64/atlas/ in Makefile.config
 * Remember to check in Makefile.config WITH_PYTHON_LAYER := 1 and check that system paths for python are used (and not anaconda or other)
 
 Must build caffe: http://caffe.berkeleyvision.org/installation.html#compilation
