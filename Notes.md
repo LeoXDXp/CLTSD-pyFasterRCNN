@@ -4,6 +4,13 @@
 * BLAS_LIB=/usr/lib64/atlas/ in Makefile.config
 * Remember to check in Makefile.config WITH_PYTHON_LAYER := 1 and check that system paths for python are used (and not anaconda or other)
 
+#### OpenCV 3 
+
+ * problem with :
+ > /usr/bin/ld: .build_release/examples/cpp_classification/classification.o: referencia sin definir al símbolo '_ZN2cv6imreadERKNS_6StringEi'
+/usr/local/lib//libopencv_imgcodecs.so.3.3: error adding symbols: DSO missing from command line
+
+ 
 Must build caffe: http://caffe.berkeleyvision.org/installation.html#compilation
 * Only cudNN v5 soported (Archive version for cuda 8) : https://github.com/BVLC/caffe/pull/4159
 * Must build caffe within *py-faster-rcnn project:  https://github.com/BVLC/caffe/issues/4619
